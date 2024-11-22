@@ -25,8 +25,8 @@ spec:
       - name: frontend
         image: joindevops/frontend:v1
 ---
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name: frontend
   namespace: expense
@@ -37,11 +37,9 @@ spec:
     tier: web
     project: expense
   ports:
-  - name: frontend-port
-    protocol: TCP
-    port: 80 # service port
-    targetPort: 80 # container port
-
-      
+    - name: frontend-port
+      protocol: TCP
+      port: 80           # Service port
+      targetPort: 80     # Container port
 
       
