@@ -33,7 +33,7 @@ metadata:
   namespace: expense
 spec:
   type: LoadBalancer
-  selector:
+selector:
     app: frontend
     tier: web
     project: expense
